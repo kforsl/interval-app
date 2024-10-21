@@ -1,0 +1,82 @@
+.svg-logo {
+    animation: scaleLogo 0.5s ease-in-out;
+    transform: rotate(0deg);
+    fill: #ffffff;
+}
+
+.icon-open {
+    transform: rotate(-90deg);
+    fill: #ffffff;
+    animation: openNav 0.5s ease-in-out;
+}
+
+.icon-close {
+    animation: closeNav 0.5s ease-in-out;
+    fill: #222222;
+}
+
+@keyframes scaleLogo {
+    0% {
+        scale: 0;
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 1;
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes openNav {
+    0% {
+        /* transform: rotate(-90deg); */
+        transform: rotate(0deg);
+        fill: #222222;
+    }
+    25%,
+    40% {
+        /* transform: rotate(-95deg); */
+        transform: rotate(10deg);
+        scale: 0.9;
+        fill: #222222;
+    }
+    75% {
+        transform: rotate(-95deg);
+        /* transform: rotate(10deg); */
+        scale: 1.2;
+        fill: #ffffff;
+    }
+    100% {
+        transform: rotate(-90deg);
+        /* transform: rotate(0deg); */
+        fill: #ffffff;
+    }
+}
+
+@keyframes closeNav {
+    0% {
+        transform: rotate(-90deg);
+        /* transform: rotate(0deg); */
+        fill: #ffffff;
+    }
+    25%,
+    40% {
+        transform: rotate(-95deg);
+        /* transform: rotate(10deg); */
+        scale: 1.2;
+        fill: #ffffff;
+    }
+    75% {
+        transform: rotate(10deg);
+        /* transform: rotate(-95deg); */
+        scale: 0.9;
+        fill: #222222;
+    }
+    100% {
+        transform: rotate(0deg);
+        /* transform: rotate(-90deg); */
+        fill: #222222;
+    }
+}

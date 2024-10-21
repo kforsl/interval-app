@@ -1,0 +1,59 @@
+.analog {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-image: url("../../assets/clockFace.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    .analog__min {
+        width: 3%;
+        height: 45%;
+        border-radius: 4px;
+        background-color: #000000;
+        position: absolute;
+        top: 5%;
+        left: calc(50% - 1.5%);
+        transform-origin: bottom center;
+        z-index: 1;
+        transform: rotate(0);
+    }
+
+    .analog__sec {
+        width: 1.5%;
+        height: 45%;
+        border-radius: 4px;
+        background-color: #555555;
+        position: absolute;
+        top: 5%;
+        left: calc(50% - 0.75%);
+        z-index: 2;
+        transform-origin: bottom center;
+        z-index: 4;
+    }
+
+    .analog__center {
+        width: 6%;
+        aspect-ratio: 1;
+        background-color: #000;
+        border-radius: 100%;
+        position: absolute;
+        top: calc(50% - 3%);
+        left: calc(50% - 3%);
+        z-index: 1;
+    }
+
+    .analog__center::after {
+        content: "";
+        display: block;
+        width: 50%;
+        aspect-ratio: 1;
+        background-color: #555555;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 25%);
+        left: calc(50% - 25%);
+        z-index: 3;
+    }
+}

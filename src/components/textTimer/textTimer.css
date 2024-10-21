@@ -1,0 +1,10 @@
+.text-timer {
+    max-width: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 4px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}

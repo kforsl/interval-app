@@ -1,0 +1,30 @@
+.button__link {
+    margin: 0 auto;
+}
+
+.button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid #222222;
+    color: #222222;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+
+.button--big {
+    width: 100%;
+    border: 2px solid #222222;
+    opacity: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.button--light {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
